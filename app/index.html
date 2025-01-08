@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Rapid Reflex</title>
+    <meta name="description" content="Rapid Reflex: A app for reaction training using both visual and sound cues.">
+    <link rel="icon" type="image/png" sizes="196x196" href="./media/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./media/icon-512x512.png">
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ff4141ff" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2 id="message"></h2>
+        <h2 id="sign"></h2>
+        <div id="buttonContainer">
+            <button id="startButton" class="button">Start</button>
+            <button id="settingsButton" class="settings">Settings</button>
+        </div>
+        <div id="settingsModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Settings</h3>
+                <div class="range-container">
+                    <label for="rangeMin">Trigger interval</label>
+                    <input type="range" id="rangeMin" data-gradient="true" min="1" max="10" value="3">
+                    <input type="range" id="rangeMax" data-gradient="true" min="1" max="10" value="9">
+                    <div class="values">
+                        <span id="minValue">3</span> - <span id="maxValue">9</span>
+                    </div>
+                </div>
+                <div class="trigger-container">
+                    <label for="colorCount">Triggers</label>
+                    <input type="checkbox" id="colorSound" checked><label for="colorSound">Sound</label>
+                    <!-- <input type="checkbox" id="switchColor" checked><label for="switchColor">Switch</label> -->
+                    <input type="range" id="colorCount" min="2" max="10" value="2">
+                    <div class="values">
+                        <span id="colorCountValue">2</span>
+                    </div>
+                </div>
+                <div class="dot-container">
+                    <label for="showDots">Dots</label>
+                    <label>
+                        <input type="checkbox" id="showDots" checked><label for="showDots">Show</label>
+                        <input type="checkbox" id="dotSound" checked><label for="dotSound">Sound</label>
+                        <!-- <input type="checkbox" id="mixDots" unchecked><label for="mixDots">Alternate</label>
+                        <div class="dotcount-container">
+                            <label for="dotCount">Types of dot</label>
+                            <input type="range" id="dotCount" min="1" max="10" value="1">
+                            <div class="values">
+                                <span id="dotCountValue">1</span>
+                            </div>
+                        </div> -->
+                    </label>
+                </div>
+
+                <button id="closeSettings" class="button">Close</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

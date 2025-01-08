@@ -1,0 +1,43 @@
+{
+    "name": "Rapid Reflex",
+    "short_name": "RapidReflex",
+    "id": "RT20250106_v0.1.0",
+    "description": "Random triggers for reaction training",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#ff4141",
+    "background_color": "#f5f5f5",
+    "categories": [
+        "sports",
+        "fitness",
+        "health",
+        "utilities"
+      ],
+    "icons": [
+        {
+            "src": "./media/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./media/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./media/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./media/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
